@@ -36,3 +36,19 @@ x %>%
         x = "Percentage of Red Beads Out of 25 Drawn",
         y = "Count") 
 ```
+
+```{r}
+red <- sum(x$red)
+white <- sum(x$white)
+red/(red+white)
+```
+
+```{r}
+urn <- tibble(bean_ID = 1:10000,
+              color = c(rep("Red", 2000), rep("White", 8000)))
+```
+
+```{r}
+
+```
+
